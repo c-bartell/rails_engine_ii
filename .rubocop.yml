@@ -15,6 +15,7 @@ AllCops:
     - 'config/environment.rb'
     - 'config/puma.rb'
     - 'config/spring.rb'
+    - 'config/initializers/**/*'
   NewCops: enable
 
 Style/FrozenStringLiteralComment:
