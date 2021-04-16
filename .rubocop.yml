@@ -9,6 +9,12 @@ AllCops:
     - 'project_requirements/**/*'
     - 'tmp/**/*'
     - 'vendor/**/*'
+    - 'config/application.rb' 
+    - 'config/boot.rb'
+    - 'config/environments/**/*'
+    - 'config/environment.rb'
+    - 'config/puma.rb'
+    - 'config/spring.rb'
   NewCops: enable
 
 Style/FrozenStringLiteralComment:
