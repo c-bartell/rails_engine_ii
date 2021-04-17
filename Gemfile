@@ -27,6 +27,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
   gem 'factory_bot_rails'
+  gem 'faker'
   gem 'pry'
   gem 'pry-doc'
   gem 'rspec-rails'
