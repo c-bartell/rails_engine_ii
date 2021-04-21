@@ -13,8 +13,14 @@ context Api::V1::MerchantsController, type: :request do
 
       expect(body).to be_a Hash
       
-      expect(body[:data]).to be_an Array
-      expect(body[:data].length).to eq 20
+      data = body[:data]
+
+      expect(data).to be_an Array
+      expect(data.length).to eq 20
+
+      merchant1 = data.first
+
+      expect(merchant1[:type]).to eq 'merchant'
     end
   end
 end
