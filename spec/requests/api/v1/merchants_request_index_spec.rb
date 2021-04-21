@@ -13,7 +13,7 @@ context Api::V1::MerchantsController, type: :request do
 
       expect(body).to be_a Hash
       
-      expect(body.data).to be_an Array
+      expect(body[:data]).to be_an Array
     end
   end
 end
