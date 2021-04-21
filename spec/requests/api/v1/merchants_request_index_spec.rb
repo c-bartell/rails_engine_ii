@@ -12,7 +12,7 @@ context Api::V1::MerchantsController, type: :request do
       body = JSON.parse(response.body, symbolize_names: true)
 
       expect(body).to be_a Hash
-      
+
       data = body[:data]
 
       expect(data).to be_an Array
